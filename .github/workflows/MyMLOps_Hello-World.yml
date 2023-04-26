@@ -1,0 +1,42 @@
+name: Modelops deploy		# The name of your workflow. GitHub displays 
+# the names of your workflows on your
+# repository's "Actions" tab.
+on:					# It is used to automatically trigger a workflow.
+  # Triggers the workflow on push or pull request events but only for the "main" 
+  # branch.
+  push:				# Runs the workflow when the push event occurs.
+    branches: [ main ]		# workflow will run when someone pushes to main.
+  pull_request:			# Runs the workflow when activity on a 
+# pull request in the workflow's 
+# repository occurs.
+    branches: [ main ]		# filter to configure your workflow to only run
+# on pull requests that target specific branches.
+# A workflow run is made up of one or more jobs that can run sequentially or in 
+# parallel.
+jobs:					# A workflow run is made up of one or more jobs,
+# which run in parallel by default. Each job runs
+# in a runner environment specified by runs-on.
+  # This workflow contains a single job called "build".
+  build:
+    runs-on: ubuntu-latest 	# The type of runner that the job will run on. 
+    container: adsoft/aiops:latest # It is used to to create a container to run any
+  # steps in a job that don't already specify a 
+  # container.
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:				# Steps can run commands, run setup tasks, or run 
+# an action in your repository, a public 
+# repository, or an action published in a Docker 
+# registry. Not all steps run actions, but all 
+# actions run as a step. Each step runs in its own 
+# process in the runner environment and has access 
+# to the workspace and filesystem. Because steps 
+# run in their own process, changes to environment 
+# variables are not preserved between steps.
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2 	# It will use the actions/checkout github action 
+# (source here) with the ref checkout@v2. This ref 
+# only refers to the github action version 
+# (nothing to do with your repo)
+    - name: hello-world		# A name for your step to display on GitHub
+      run: echo “hello world workflows …” # It Runs command-line programs using the 
+  # operating system's shell.
