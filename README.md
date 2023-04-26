@@ -1,2 +1,2 @@
 # MLOps
-Deploy data Driven
+Deploy data Driven model on Kuberenates
