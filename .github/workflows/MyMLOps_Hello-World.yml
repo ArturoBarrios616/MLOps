@@ -43,4 +43,4 @@ jobs:					# A workflow run is made up of one or more jobs,
     - name: list-directory		# A name for your step to display on GitHub
       run: ls -la # It Runs command-line programs using the 
     - name: run python linear-model.py		# A name for your step to display on GitHub
-      run: run python linear-model.py
+      run: python linear-model.py
