@@ -19,9 +19,9 @@ jobs:
     - name: install unzip 
       run: apt-get install unzip
     - name: Download model
-      run: wget -O pokemon-model-40.zip https://firebasestorage.googleapis.com/v0/b/pokedex-eba21.appspot.com/o/pokemon_model_40.zip?alt=media&token=105f6022-bd33-4b0d-83a2-dc1a27dd0001
+      run: wget -O pokemon-model.zip https://firebasestorage.googleapis.com/v0/b/pokedex-eba21.appspot.com/o/pokemon_model.zip?alt=media&token=d02e9202-c445-49d4-8e81-22c452e9ec4d
     - name: extract model
-      run: unzip pokemon-model-40.zip
+      run: unzip pokemon-model.zip
 
 
     - name: docker login
