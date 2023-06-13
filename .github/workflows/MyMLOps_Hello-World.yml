@@ -22,8 +22,7 @@ jobs:
       run: wget -O pokemon-model-40.zip https://firebasestorage.googleapis.com/v0/b/pokedex-eba21.appspot.com/o/pokemon_model_40.zip?alt=media&token=105f6022-bd33-4b0d-83a2-dc1a27dd0001
     - name: extract model
       run: unzip pokemon-model-40.zip
-    - name: show dir
-      run: ls -la pokemon-model-40
+
 
     - name: docker login
       env:
