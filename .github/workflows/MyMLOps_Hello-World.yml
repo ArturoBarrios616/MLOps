@@ -19,7 +19,7 @@ jobs:
     - name: install unzip 
       run: apt-get install unzip
     - name: Download model
-      run: wget -O pokemon-model.zip https://firebasestorage.googleapis.com/v0/b/pokedex-eba21.appspot.com/o/pokemon-model.zip?alt=media&token=7f6211e2-5181-4462-94a1-55658b0807c3
+      run: wget -O pokemon-model.zip https://firebasestorage.googleapis.com/v0/b/pokedex-eba21.appspot.com/o/pokemon-model.zip?alt=media&token=fa34afd4-fbf8-41ab-9045-389cd12d482b
     - name: extract model
       run: unzip pokemon-model.zip
 
