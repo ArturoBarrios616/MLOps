@@ -1,4 +1,5 @@
 # MLOps
-Deploy data driven model on Kuberenates
+Deploy pokemon model
+Data set: https://www.kaggle.com/datasets/thedagger/pokemon-generation-one
 
 
